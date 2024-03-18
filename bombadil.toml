@@ -1,0 +1,16 @@
+dotfiles_dir = "dotfiles"
+
+[settings]
+
+vars = [ "vars.toml" ]
+
+[settings.dots]
+
+zshrc = { source = ".config/zsh/.zshrc", target = ".config/zsh/.zshrc" }
+aliasrc = { source = ".config/zsh/.aliasrc", target = ".config/zsh/.aliasrc" }
+zshenv = { source = ".zshenv", target = ".zshenv" }
+kitty = { source = ".config/kitty", target = ".config/kitty" }
+featherpad = { source = ".config/featherpad", target = ".config/featherpad" }
+powerlevel10k = { source = ".config/zsh/plugins/powerlevel10k", target = ".config/zsh/plugins/powerlevel10k" }
+zsh-completions = { source = ".config/zsh/plugins/zsh-completions", target = ".config/zsh/plugins/zsh-completions" }
+zsh-syntax-highlighting = { source = ".config/zsh/plugins/zsh-syntax-highlighting", target = ".config/zsh/plugins/zsh-syntax-highlighting" }

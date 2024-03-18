@@ -1,0 +1,34 @@
+alias ls="eza --icons --group-directories-first -h"
+alias lsa="eza --all --icons --group-directories-first -l -@ -h --time-style='+%d.%m.%Y %H:%M'"
+alias laa="eza --all --icons=always --group-directories-first -l -@ -h --total-size --time-style='+%d.%m.%Y %H:%M'"
+alias cpu='top -F -R -o cpu'
+alias mem='top -F -R -o MEM'
+alias grep="grep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}"
+alias ...=../..
+alias ....=../../..
+alias .....=../../../..
+alias ......=../../../../..
+
+alias d="docker"
+alias dc="docker-compose"
+alias dcu="docker-compose up"
+alias dcd="docker-compose down"
+
+# ps
+alias psgrep="ps aux | grep -v grep | grep -i -e VSZ -e --color=always"
+alias ps="procs"
+alias psmem="procs --sortd mem"
+alias pscpu="procs --sortd cpu"
+
+#alias clean='sudo apt-get clean'
+#alias purge='sudo apt-get purge'
+#alias search='sudo apt-get search'
+#alias update='sudo apt-get update'
+#alias remove='sudo apt-get remove'
+#alias upgrade='sudo apt-get upgrade'
+#alias install='sudo apt-get install'
+#alias autoremove='sudo apt-get autoremove'
+#alias dist-upgrade='sudo apt-get dist-upgrade'
+
+alias pacupd='sudo pacman -Syu'
+alias pacinst='sudo pacman -S'
